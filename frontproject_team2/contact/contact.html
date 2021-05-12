@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0d44ecf34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Forest Resort</title>
+    <!-- footer css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./footer.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $( document ).ready( function() {
+        AOS.init();
+
+        // form에서 submit버튼을 눌렀을 때, 값이 없으면 경고창
+        $('#input_btn').click(function(){
+            if($('#uname').val() == '' 
+            ||  $('#uemail').val() == '' 
+            || $('#uphone').val() == '' 
+            || $('#usubject').val() == '')
+                alert("입력되지 않은 값이 있습니다.");
+            else{
+                alert("제출되었습니다.");
+            }
+        });
+
+        $('.submit_btn .btn').click(function(){
+            alert('준비중입니다.');
+        })
+      } );
+
+      /*
+      data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="30"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+      */
+
+    </script>
+</head>
+
+<body style="background-color: #FAF7F2;">
+    <div id="site__wrapper" style="font-family: 'Noto Serif KR', serif;" >
+        <!-- site header(navbar)-->
+        <div id="site__header" >
+            <nav class="navbar" style="text-decoration: none; list-style-type: none; color:black">
+                <div class="navbar__logo" style="text-decoration: none; list-style-type: none;">
+                    <img src="logo_bk.png" width="100px" height="100px">
+                    <a href="../welcome.html" id = "header__a">Forest Resort</a>
+                </div>
+
+                <ul class="navbar__menu" id = "navbar__menu__a">
+                    <li><a href="../main/main.html">MAIN</a></li>
+                    <li><a href="../about/about.html">ABOUT</a></li>
+                    <li><a href="../gallary/Gallary.html">GALLERY</a></li>
+                    <li><a href="../tour/tour.html">TOUR</a></li>
+                    <li><a href="../contact/contact.html">CONTACT</a></li>
+                </ul>
+
+                <!-- <ul class="navbar__icons">
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                </ul> -->
+
+                <a href="#" class="navbar__toggleBtn">
+                    <span class="toggleBtn"><i class="fas fa-bars"></i></span>
+                </a>
+            </nav>
+        </div>
+        <hr style="border:solid 1px;">
+        <!-- site body(content)-->
+        <div id="site__body">
+            <!-- Contact Us-->
+            <div id="contact__main" data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+                <div class="content">
+                    <h1 class="title" id="contact_us">CONTACT US</h1>
+                    <div class="content_row">
+                        <div id="byPhone" class="col">
+                            <div class="icon"><i class="fas fa-phone" class="icon"></i></div>
+                            <h2 class="subtitle">By Phone</h2>
+                            <p class="desc">
+                                <br>
+                                Korea
+                                <br>
+                                064) 713 - 1121
+                            </p>
+                            <div class="submit_btn">
+                                <input type="submit" value="Contact" class="btn">
+                            </div>
+                        </div>
+                        <div id="byEmail" class="col" >
+                            <div class="icon"><i class="fas fa-envelope" class="icon"></div></i>
+                            <h2 class="subtitle" style="
+                            margin-bottom: 30px;" >By Email</h2>
+                            <p class="desc">
+                                <br>
+                                soHard@forest.com
+                            </p>
+                            <div class="submit_btn" style="margin-top: 15px;">
+                                <input type="submit" value="Contact" class="btn">
+                            </div>
+                        </div>
+                        <div id="live-chat" class=col>
+                            <div class="icon"><i class="fas fa-comment-dots"></i></div>
+                            <h2 class="subtitle">Live chat</h2>
+                            <p class="desc">
+                                <br>
+                                Chat with a member
+                                <br>
+                                of our in-house team.
+                            </p>
+                            <div class="submit_btn" style="text-align: center;">
+                                <input type="submit" value="Start Chat" class="btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Leave Message-->
+            <div id="contact__form" data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+                <div class="content">
+                    <h1 class="title">Leave Message Here!</h1>
+                    <p class="desc">If you want to leave messages, go ahead</p>
+                    <div id="formField">
+                        <form action="#" class="formField">
+                            <div class="formFieldWrap">
+                                <div class="input">
+                                    <label for="uname">Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <input type="text" id="uname" placeholder="Please Write Your Name"><br>
+                                </div>
+                                <div class="input">
+                                    <label for="uemail">Email&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <input type="email" id="uemail" placeholder="Please Write Your Email"><br>
+                                </div>
+                                <div class="input">
+                                    <label for="uphone">Number</label>
+                                    <input type="text" id="uphone" placeholder="Please Write Your Phone Number"><br>
+                                </div>
+                                <div class="input">
+                                    <label for="subject">Message</label>
+                                    <textarea id="usubject" name="subject" placeholder="Please Write Your Message"
+                                        style="height:100px"></textarea>
+                                </div>
+                                <div class="submit_btn" style="margin-top: 15px; margin-left: 40px;">
+                                    <input type="submit" value="SUBMIT" id="input_btn">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location-->
+            <div id="contact__location" data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+                <div class="content">
+                    <h1>We are Here</h1>
+                    <p style="text-align: center;">제주특별자치도 제주시 이호일동 1792</p>
+                    <div class="map__size" style="width: 100%; margin-bottom:40px;">
+                        <div id="map" style="width:60%;height:400px; margin:auto;"></div>
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d90c79582bb4a501217f85434d4874f6"></script>
+                    </div>
+                </div>
+
+        </div>
+        
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer" >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">THE SCOTT RESORT <i>WANTS TO BE YOUR GRATIFICATION.</i> We are open and ready to welcome you back. Learn more about how we are keeping our resort clean and safe for you.
+                        Wander well and book boutique, stress-free with our flexible cancellation policy. The Scott Resort & Spa is an ode to discovery, a love letter to life lived on the borderlands. Relax and revive with one of La Vidorra’s
+                        rejuvenating spa treatments. With six private sun-washed treatment rooms, La Vidorra is dedicated to your serenity and tranquility.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Menu</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">News & Accolades</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Reservations</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">T. 800 528 7867</a></li>
+                        <li><a href="#">T. 480 945 7666</a></li>
+                        <li><a href="#">F. 480 946 4056</a></li>
+                        <li><a href="#">The Scott Resort & Spa<br>
+                            25 haeAnro,<br>
+                                jeju city,<br>
+                                Jeju Island 85251</a></li>
+                        <!-- <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="#">THE SCOTT RESORT</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

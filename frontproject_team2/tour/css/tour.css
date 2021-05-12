@@ -1,0 +1,81 @@
+/* 배경색 */
+body{
+    background-color: #FAF7F2;
+}
+
+/* 배경사진 */
+.bg{
+    width: 100%;
+    height: 0;
+    padding-top: calc(250 / 700 * 100%);
+    background: url("../images/sungsan.jpg") center center / cover no-repeat;
+    background-position-y: 40%;
+}
+
+/* 내용 부분 */
+.greeting{
+    padding: 10px;
+    display: inline;
+    text-align: center;
+}
+
+.greeting header{
+    padding-top: 10px;
+    font-size: 24pt;
+}
+
+header{
+    color: #455D58;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p.travel, h4{
+    color: #455D58;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 500;
+}
+
+p.travel{
+    font-size: 105%;
+}
+
+h4{
+    font-weight: bold;
+}
+
+hr.travel{
+    border: 0;
+    height: 2px;
+    background-color: #455D58;
+}
+
+.article {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 800px;
+    height: 35vw;
+    min-height: 290px;
+    max-height: 400px;
+    padding: 20px 10px;
+}
+
+.text_wrap{
+    position: absolute;
+    top: 10px;
+    left: 52%;
+    width: 48%;
+    max-width: 700px;
+    max-height: 231px;
+    padding: 0;
+}
+
+.article img{
+    position: absolute;
+    top: 16px;
+    right: 50%;
+    width: 50%;
+}
